@@ -1,0 +1,11 @@
+mkdir /mnt/harald
+mkdir /mnt/atoosa
+mkdir /mnt/batist
+mkdir /mnt/common
+mkdir /mnt/music
+mkdir /mnt/images
+mkdir /mnt/software
+mkdir /mnt/Movies2TB
+mkdir /mnt/Movies3TB
+mkdir /mnt/Series
+mkdir /mnt/Tera
