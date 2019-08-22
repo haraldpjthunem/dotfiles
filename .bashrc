@@ -62,39 +62,32 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # Aliases
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -alF'
 alias la='ls --color=auto -A'
 alias l='ls --color=auto -CF'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -pv'
 alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias wget='wget -c'
 
 alias gadd='git add'
 alias gcom='git commit'
 alias gsup='git status'
 
-# alias pip='pip3'
-# alias pym='python3 manage.py'
-# alias mkenv='python3 -m venv env'
-# alias startenv='source env/bin/activate && which python3'
-# alias stopenv='deactivate'
+# python
+alias pip='pip3'
+alias pym='python3 manage.py'
+alias mkenv='python3 -m venv env'
+alias startenv='source env/bin/activate && which python3'
+alias stopenv='deactivate'
 
 # Use docker without a root-equivalent docker group
 alias docker='sudo docker'
@@ -103,6 +96,23 @@ alias docker='sudo docker'
 function cd () {
     builtin cd "$1"
     ls -ACF
+}
+
+# Change up a variable number of directories
+# E.g:
+#   cu   -> cd ../
+#   cu 2 -> cd ../../
+#   cu 3 -> cd ../../../
+function cu {
+    local count=$1
+    if [ -z "${count}" ]; then
+        count=1
+    fi
+    local path=""
+    for i in $(seq 1 ${count}); do
+        path="${path}../"
+    done
+    cd $path
 }
 
 # Add an "alert" alias for long running commands.  Use like so:
