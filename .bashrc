@@ -93,10 +93,10 @@ alias stopenv='deactivate'
 alias docker='sudo docker'
 
 # Show contents of dir after action
-function cd () {
-    builtin cd "$1"
-    ls -ACF
-}
+# function cd () {
+#     builtin cd "$1"
+#     ls -ACF
+# }
 
 # Change up a variable number of directories
 # E.g:
