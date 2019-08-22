@@ -1,31 +1,21 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
 
+# History control
 # don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
 HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
 
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -84,13 +74,36 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# Aliases
+alias ls='ls --color=auto'
+alias ll='ls --color=auto -alF'
+alias la='ls --color=auto -A'
+alias l='ls --color=auto -CF'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias cp='cp -rv'
+alias mv='mv -v'
+alias mkdir='mkdir -pv'
+alias grep='grep --color=auto'
+alias wget='wget -c'
+
+alias gadd='git add'
+alias gcom='git commit'
+alias gsup='git status'
+
+# alias pip='pip3'
+# alias pym='python3 manage.py'
+# alias mkenv='python3 -m venv env'
+# alias startenv='source env/bin/activate && which python3'
+# alias stopenv='deactivate'
+
+# Use docker without a root-equivalent docker group
+alias docker='sudo docker'
+
+# Show contents of dir after action
+function cd () {
+    builtin cd "$1"
+    ls -ACF
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
