@@ -10,6 +10,15 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -69,6 +78,13 @@ alias la='ls --color=auto -A'
 alias l='ls --color=auto -CF'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
+alias h='history'
+alias du='du -kh'    # Makes a more readable output.
+alias df='df -kTh'
+
+# Pretty-print of some PATH variables:
+alias path='echo -e ${PATH//:/\\n}'
+alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 
 alias cp='cp -rv'
 alias mv='mv -v'
@@ -119,14 +135,16 @@ function cu {
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+#-------------------------------------------------------------
+# File & strings related functions, from
+# http://www.tldp.org/LDP/abs/html/sample-bashrc.html
+#-------------------------------------------------------------
+# Find a file with a pattern in name:
+function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+# Find a file with pattern $1 in name and Execute $2 on it:
+function fe() { find . -type f -iname '*'"${1:-}"'*' \
+-exec ${2:-file} {} \;  ; }
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

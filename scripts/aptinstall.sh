@@ -22,6 +22,8 @@ install virtualbox
 install calibre
 install kde-spectacle
 install qdirstat
+install dosbox
+install libnotify-bin
 # install vim
 # install tmux
 # install htop
