@@ -81,11 +81,6 @@ alias vdir='vdir --color=auto'
 alias h='history'
 alias du='du -kh'    # Makes a more readable output.
 alias df='df -kTh'
-
-# Pretty-print of some PATH variables:
-alias path='echo -e ${PATH//:/\\n}'
-alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
-
 alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -pv'
@@ -93,7 +88,21 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias wget='wget -c'
+alias man='tldr' # Get original 'man' by using '\man'
+alias now='date +"%T"'
+alias nowdate='date +"%d-%m-%Y"'
 
+# Pretty-print of some PATH variables:
+alias path='echo -e ${PATH//:/\\n}'
+alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
+
+# reboot / halt / poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+# git related
 alias gadd='git add'
 alias gcom='git commit'
 alias gsup='git status'

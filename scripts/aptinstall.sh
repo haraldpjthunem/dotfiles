@@ -24,6 +24,7 @@ install kde-spectacle
 install qdirstat
 install dosbox
 install libnotify-bin
+install tldr  # Short version of 'man' command
 # install vim
 # install tmux
 # install htop
