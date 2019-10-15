@@ -117,6 +117,10 @@ alias stopenv='deactivate'
 # Use docker without a root-equivalent docker group
 alias docker='sudo docker'
 
+# An Android emulator for Nexus5X
+# It may need to be changed according to Android Studio version
+alias nexus5='emulator @Nexus_5X_API_29_x86'
+
 # Show contents of dir after action
 # function cd () {
 #     builtin cd "$1"
@@ -168,4 +172,4 @@ fi
 
 export ANDROID_HOME="/home/harald/Development/android-sdk"
 export JAVA_HOME="/home/harald/Development/JDK12"
-export PATH="$PATH:$JAVA_HOME/bin:/home/harald/Development/flutter/bin:/usr/lib/dart/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$JAVA_HOME/bin:/home/harald/.local/bin:/home/harald/Development/maven/bin:/home/harald/Development/flutter/bin:/home/harald/Development/dart-sdk/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
