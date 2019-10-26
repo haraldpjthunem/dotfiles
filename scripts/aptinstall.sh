@@ -56,7 +56,7 @@ install gwenview          # Image viewer
 
 # Development
 install code              # Visual Studio Code (advanced text editor)
-install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
+# install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
 
 # Fun stuff

@@ -119,7 +119,7 @@ alias docker='sudo docker'
 
 # An Android emulator for Nexus5X
 # It may need to be changed according to Android Studio version
-alias nexus5='emulator @Nexus_5X_API_29_x86'
+alias nexus5='emulator @Nexus_5X_API_29_x86 &'
 
 # Show contents of dir after action
 # function cd () {
