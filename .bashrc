@@ -170,6 +170,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export ANDROID_HOME="/home/harald/Development/android-sdk"
-export JAVA_HOME="/home/harald/Development/JDK12"
-export PATH="$PATH:$JAVA_HOME/bin:/home/harald/.local/bin:/home/harald/Development/maven/bin:/home/harald/Development/flutter/bin:/home/harald/Development/dart-sdk/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
+export ANDROID_HOME="$HOME/Development/android-sdk"
+export JAVA_HOME="$HOME/Development/JDK12"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/dart-sdk/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
