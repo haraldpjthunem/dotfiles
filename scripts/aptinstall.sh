@@ -29,10 +29,13 @@ install libnotify-bin     # Used by several programs to send notifications
 install tldr              # Short version of 'man' command
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
-# install vim               # Text editor
+install vim               # Text editor
 # install tmux              # Terminal multiplexer
 # install nmap              # Network mapper for network exploration or security auditing
 # install openvpn           # Virtual private network daemon
+install krename           # Batch file renamer
+install stacer            # System optimizer and monitoring
+install cmatrix           # Display from "The Matrix"
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils
@@ -42,7 +45,7 @@ install samba
 
 # Multimedia
 install audacity          # Cross-platform audio editor/converter
-install handbrake         # DVD ripper and video transcoder
+# install handbrake         # DVD ripper and video transcoder
 install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
 install vlc               # Multimedia player and streamer
 
@@ -55,7 +58,7 @@ install gwenview          # Image viewer
 # install jpegoptim         # JPG optimizer (recompresses image files)
 
 # Development
-install code              # Visual Studio Code (advanced text editor)
+# install code              # Visual Studio Code (update: no apt package available)
 # install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
 

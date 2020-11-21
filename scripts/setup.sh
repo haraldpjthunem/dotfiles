@@ -3,6 +3,9 @@
 # Set up symbolic links
 ./symlink.sh
 
+# Create samba directories
+./makedirs.sh
+
 # See our bash changes
 source ~/.bashrc
 
@@ -11,9 +14,6 @@ source ~/.bashrc
 
 # Install from other sources
 ./programs.sh
-
-# Create samba directories
-./makedirs.sh
 
 # Get all upgrades
 sudo apt upgrade -y

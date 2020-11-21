@@ -2,5 +2,5 @@
 
 cd programs/
 
-./docker.sh
+# ./docker.sh
 ./python.sh

@@ -1,11 +1,4 @@
 sudo mkdir /mnt/FILESERVER
-sudo mkdir /mnt/FILESERVER/harald
-sudo mkdir /mnt/FILESERVER/atoosa
-sudo mkdir /mnt/FILESERVER/batist
-sudo mkdir /mnt/FILESERVER/common
-sudo mkdir /mnt/FILESERVER/music
-sudo mkdir /mnt/FILESERVER/images
-sudo mkdir /mnt/FILESERVER/software
 sudo mkdir /mnt/Movies2TB
 sudo mkdir /mnt/Movies3TB
 sudo mkdir /mnt/Series

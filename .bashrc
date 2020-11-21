@@ -108,6 +108,7 @@ alias gcom='git commit'
 alias gsup='git status'
 
 # python
+alias python='python3'
 alias pip='pip3'
 alias pym='python3 manage.py'
 alias mkenv='python3 -m venv env'
@@ -171,8 +172,8 @@ if ! shopt -oq posix; then
 fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
-export JAVA_HOME="$HOME/Development/JDK12"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/dart-sdk/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current/"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/Anaconda/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
@@ -492,3 +493,23 @@ bash_prompt
 unset bash_prompt
 
 ### EOF ###
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/harald/.sdkman"
+[[ -s "/home/harald/.sdkman/bin/sdkman-init.sh" ]] && source "/home/harald/.sdkman/bin/sdkman-init.sh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/harald/Development/Anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/harald/Development/Anaconda/etc/profile.d/conda.sh" ]; then
+        . "/home/harald/Development/Anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/harald/Development/Anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
