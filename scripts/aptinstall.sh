@@ -36,6 +36,7 @@ install vim               # Text editor
 install krename           # Batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
+install notepadqq         # Notepad++ like text editor
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils

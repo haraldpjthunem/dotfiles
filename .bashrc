@@ -91,6 +91,7 @@ alias wget='wget -c'
 alias man='tldr' # Get original 'man' by using '\man'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
+alias code='codium'
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
@@ -173,7 +174,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current/"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/Anaconda/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/Maven/bin:$HOME/Development/Flutter/bin:$HOME/Development/Anaconda/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##

@@ -3,4 +3,4 @@
 # It does not delete any files at the destination.
 
 echo "---Running backup of Code---"
-rsync -at /data/Code /mnt/FILESERVER/harald
+rsync -at /media/data/Code /mnt/FILESERVER/harald

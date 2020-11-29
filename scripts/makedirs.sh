@@ -1,5 +1,5 @@
+sudo mkdir /mnt/TERA
+sudo mkdir /mnt/SERIES
+sudo mkdir /mnt/MOVIES2TB
+sudo mkdir /mnt/MOVIES3TB
 sudo mkdir /mnt/FILESERVER
-sudo mkdir /mnt/Movies2TB
-sudo mkdir /mnt/Movies3TB
-sudo mkdir /mnt/Series
-sudo mkdir /mnt/Tera
