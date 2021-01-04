@@ -113,7 +113,7 @@ alias python='python3'
 alias pip='pip3'
 alias pym='python3 manage.py'
 alias mkenv='python3 -m venv env'
-alias startenv='source env/bin/activate && which python3'
+alias startenv='source venv/bin/activate && which python3'
 alias stopenv='deactivate'
 
 # Use docker without a root-equivalent docker group
@@ -121,7 +121,7 @@ alias docker='sudo docker'
 
 # An Android emulator for Nexus5X
 # It may need to be changed according to Android Studio version
-alias nexus5='emulator @Nexus_5X_API_29_x86 &'
+alias nexus5='emulator @Nexus_5X_API_29 &'
 
 # Show contents of dir after action
 # function cd () {
@@ -173,8 +173,8 @@ if ! shopt -oq posix; then
 fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
-export JAVA_HOME="$HOME/.sdkman/candidates/java/current/"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/Maven/bin:$HOME/Development/Flutter/bin:$HOME/Development/Anaconda/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/anaconda3/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
@@ -501,14 +501,14 @@ export SDKMAN_DIR="/home/harald/.sdkman"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/harald/Development/Anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/harald/Development/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/harald/Development/Anaconda/etc/profile.d/conda.sh" ]; then
-        . "/home/harald/Development/Anaconda/etc/profile.d/conda.sh"
+    if [ -f "/home/harald/Development/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/harald/Development/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/harald/Development/Anaconda/bin:$PATH"
+        export PATH="/home/harald/Development/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup

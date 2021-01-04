@@ -17,7 +17,7 @@ function install {
 
 # Basics
 # install git
-install curl              # Command line app to download files
+# install curl              # Command line app to download files
 install chromium-browser  # Web browser
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
