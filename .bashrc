@@ -92,6 +92,8 @@ alias man='tldr' # Get original 'man' by using '\man'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias code='codium'
+alias sublime='/opt/sublime_text/sublime_text'
+alias np='notepadqq'
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
@@ -111,17 +113,17 @@ alias gsup='git status'
 # python
 alias python='python3'
 alias pip='pip3'
-alias pym='python3 manage.py'
-alias mkenv='python3 -m venv env'
+alias mkenv='python3 -m venv venv'
 alias startenv='source venv/bin/activate && which python3'
 alias stopenv='deactivate'
 
 # Use docker without a root-equivalent docker group
 alias docker='sudo docker'
 
-# An Android emulator for Nexus5X
+# Android emulators
 # It may need to be changed according to Android Studio version
 alias nexus5='emulator @Nexus_5X_API_29 &'
+alias pixel='emulator @Pixel_3a_API_30_x86 &'
 
 # Show contents of dir after action
 # function cd () {
@@ -174,7 +176,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/Development/anaconda3/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin/cache/dart-sdk/bin:$HOME/Development/flutter/bin:$HOME/Development/anaconda3/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
