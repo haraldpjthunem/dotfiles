@@ -84,16 +84,18 @@ alias df='df -kTh'
 alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -pv'
+alias code='codium'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias wget='wget -c'
 alias man='tldr' # Get original 'man' by using '\man'
+alias note='notepaddqq'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
-alias code='codium'
 alias sublime='/opt/sublime_text/sublime_text'
 alias np='notepadqq'
+#alias fp='/home/harald/Development/fpc-3.2.0/bin/fp'
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
@@ -176,7 +178,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin/cache/dart-sdk/bin:$HOME/Development/flutter/bin:$HOME/Development/anaconda3/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/Development/sqlite:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin/cache/dart-sdk/bin:$HOME/Development/flutter/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##

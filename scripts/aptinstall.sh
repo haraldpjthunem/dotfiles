@@ -16,9 +16,9 @@ function install {
 }
 
 # Basics
-# install git
-# install curl              # Command line app to download files
+install curl              # Command line app to download files
 install chromium-browser  # Web browser
+install mailspring        # Email client
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
 install calibre           # Electronic book reader and converter
@@ -29,14 +29,18 @@ install libnotify-bin     # Used by several programs to send notifications
 install tldr              # Short version of 'man' command
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
-install vim               # Text editor
-# install tmux              # Terminal multiplexer
-# install nmap              # Network mapper for network exploration or security auditing
-# install openvpn           # Virtual private network daemon
 install krename           # Batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
 install notepadqq         # Notepad++ like text editor
+install cool-retro-term   # Retro-style terminal
+install ranger            # Konsole-based file manager
+install gufw              # Graphical interface to firewall
+install timeshift         # System backup/restore utility
+# install vim               # Text editor
+# install tmux              # Terminal multiplexer
+# install nmap              # Network mapper for network exploration or security auditing
+# install openvpn           # Virtual private network daemon
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils
@@ -59,7 +63,7 @@ install gwenview          # Image viewer
 # install jpegoptim         # JPG optimizer (recompresses image files)
 
 # Development
-# install code              # Visual Studio Code (update: no apt package available)
+# install codium            # Visual Studio Code clone (check out https://vscodium.com/)
 # install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
 
