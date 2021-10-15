@@ -115,8 +115,8 @@ alias gsup='git status'
 # python
 alias python='python3'
 alias pip='pip3'
-alias mkenv='python3 -m venv venv'
-alias startenv='source venv/bin/activate && which python3'
+alias mkenv='python3 -m venv env'
+alias startenv='source env/bin/activate && which python3'
 alias stopenv='deactivate'
 
 # Use docker without a root-equivalent docker group
