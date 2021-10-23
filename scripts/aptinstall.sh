@@ -18,7 +18,7 @@ function install {
 # Basics
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
-install mailspring        # Email client
+# install mailspring        # Email client
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
 install calibre           # Electronic book reader and converter
@@ -32,11 +32,12 @@ install htop              # Interactive process viewer
 install krename           # Batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
-install notepadqq         # Notepad++ like text editor
+# install notepadqq         # Notepad++ like text editor
 install cool-retro-term   # Retro-style terminal
 install ranger            # Konsole-based file manager
 install gufw              # Graphical interface to firewall
-install timeshift         # System backup/restore utility
+install mc                # Midnight Commander console-based file manager
+# install timeshift         # System backup/restore utility
 # install vim               # Text editor
 # install tmux              # Terminal multiplexer
 # install nmap              # Network mapper for network exploration or security auditing

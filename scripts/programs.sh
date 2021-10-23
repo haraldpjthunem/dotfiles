@@ -1,7 +1,9 @@
 #!/bin/bash
 
 cd programs/
-
-# ./docker.sh
+./grub-customizer.sh
 ./python.sh
 ./codium.sh
+# ./etcher.sh
+# ./docker.sh
+# ./sublime-text.sh
