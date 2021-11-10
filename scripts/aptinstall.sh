@@ -19,6 +19,7 @@ function install {
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
 # install mailspring        # Email client
+install exa               # advanced ll replacement
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
 install calibre           # Electronic book reader and converter
