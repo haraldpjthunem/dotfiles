@@ -18,6 +18,7 @@ function install {
 # Basics
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
+install net-tools         # Net tools, such as ifconfig
 # install mailspring        # Email client
 # install exa               # advanced ll replacement
 install file              # file type guesser
