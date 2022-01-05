@@ -76,7 +76,7 @@ alias ls='ls --color=auto'
 alias ll='ls --color=auto -alF'
 alias la='ls --color=auto -A'
 alias l='ls --color=auto -CF'
-alias x='exa -la'
+# alias x='exa -la'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias h='history'
@@ -91,7 +91,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias wget='wget -c'
 alias man='tldr' # Get original 'man' by using '\man'
-alias note='notepaddqq'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias sublime='/opt/sublime_text/sublime_text'
@@ -179,7 +178,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$PATH:$HOME/Development/sqlite:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin/cache/dart-sdk/bin:$HOME/Development/flutter/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$HOME/.pub-cache/bin"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##

@@ -19,7 +19,7 @@ function install {
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
 # install mailspring        # Email client
-install exa               # advanced ll replacement
+# install exa               # advanced ll replacement
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
 install calibre           # Electronic book reader and converter
@@ -33,7 +33,7 @@ install htop              # Interactive process viewer
 install krename           # Batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
-# install notepadqq         # Notepad++ like text editor
+install notepadqq         # Notepad++ like text editor
 install cool-retro-term   # Retro-style terminal
 install ranger            # Konsole-based file manager
 install gufw              # Graphical interface to firewall
@@ -52,7 +52,7 @@ install samba
 
 # Multimedia
 install audacity          # Cross-platform audio editor/converter
-# install handbrake         # DVD ripper and video transcoder
+install handbrake         # DVD ripper and video transcoder
 install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
 install vlc               # Multimedia player and streamer
 
@@ -68,6 +68,7 @@ install gwenview          # Image viewer
 # install codium            # Visual Studio Code clone (check out https://vscodium.com/)
 # install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
+install libsqlite3-dev    # Library needed to use sqlite3 in Flutter development
 
 # Fun stuff
 install figlet            # Creates large characters out of ordinary screen characters
