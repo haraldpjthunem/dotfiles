@@ -1,4 +1,4 @@
 # dotfiles
 Dot-files for various Linux installations.
 
-Go to the "script" folder and run setup.sh.
+Go to either the "aptscript" or "nalascript" folder and run setup.sh.

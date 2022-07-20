@@ -76,7 +76,7 @@ alias ls='ls --color=auto'
 alias ll='ls --color=auto -alF'
 alias la='ls --color=auto -A'
 alias l='ls --color=auto -CF'
-# alias x='exa -la'
+alias x='view'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias h='history'
@@ -90,7 +90,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias wget='wget -c'
-alias man='tldr' # Get original 'man' by using '\man'
+# alias man='tldr' # Get original 'man' by using '\man'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias sublime='/opt/sublime_text/sublime_text'
@@ -125,7 +125,7 @@ alias docker='sudo docker'
 # Android emulators
 # It may need to be changed according to Android Studio version
 alias nexus5='emulator @Nexus_5X_API_29 &'
-alias pixel='emulator @Pixel_3a_API_30_x86 &'
+alias pixel='emulator @Pixel_5_API_30 &'
 
 # Show contents of dir after action
 # function cd () {
@@ -178,7 +178,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$HOME/Development/android-sdk/emulator"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
@@ -505,16 +505,18 @@ export SDKMAN_DIR="/home/harald/.sdkman"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/harald/Development/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/harald/Development/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/harald/Development/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/harald/Development/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+
+#__conda_setup="$('/home/harald/Development/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/harald/Development/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/harald/Development/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/harald/Development/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+
 # <<< conda initialize <<<
 
