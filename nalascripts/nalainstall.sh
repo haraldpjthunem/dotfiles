@@ -39,6 +39,7 @@ install cool-retro-term   # Retro-style terminal
 install ranger            # Konsole-based file manager
 install gufw              # Graphical interface to firewall
 install mc                # Midnight Commander console-based file manager
+install dia               # Diagram utility (Visio-like)
 # install timeshift         # System backup/restore utility
 # install vim               # Text editor
 # install tmux              # Terminal multiplexer
