@@ -3,6 +3,7 @@ sudo mkdir /mnt/SERIES
 sudo mkdir /mnt/MOVIES2TB
 sudo mkdir /mnt/MOVIES4TB
 sudo mkdir /mnt/FILESERVER
+sudo mkdir /mnt/WEBSERVER
 
 sudo mkdir /media/VM
 sudo mkdir /media/ISOs

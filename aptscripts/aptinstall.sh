@@ -19,7 +19,7 @@ function install {
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
 install net-tools         # Net tools, such as ifconfig
-# install mailspring        # Email client
+install mailspring        # Email client
 # install exa               # advanced ll replacement
 install file              # file type guesser
 install virtualbox        # Create and run virtual OS'es
@@ -40,7 +40,7 @@ install ranger            # Konsole-based file manager
 install gufw              # Graphical interface to firewall
 install mc                # Midnight Commander console-based file manager
 install dia               # Diagram utility (Visio-like)
-# install timeshift         # System backup/restore utility
+install timeshift         # System backup/restore utility
 # install vim               # Text editor
 # install tmux              # Terminal multiplexer
 # install nmap              # Network mapper for network exploration or security auditing

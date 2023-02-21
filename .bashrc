@@ -178,7 +178,7 @@ fi
 
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/bin:$HOME/Development/maven/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$HOME/Development/android-sdk/emulator"
+export PATH="$PATH:$JAVA_HOME/bin:$HOME/Development/maven/bin:$HOME/.local/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$HOME/Development/android-sdk/emulator"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
