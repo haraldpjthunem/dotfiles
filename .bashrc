@@ -95,6 +95,7 @@ alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias sublime='/opt/sublime_text/sublime_text'
 alias np='notepadqq'
+alias r=ranger
 #alias fp='/home/harald/Development/fpc-3.2.0/bin/fp'
 
 # Pretty-print of some PATH variables:

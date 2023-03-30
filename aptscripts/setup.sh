@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set up symbolic links
-./symlink.sh
+../symlink.sh
 
 # Create samba directories
-./makedirs.sh
+../makedirs.sh
 
 # See our bash changes
 source ~/.bashrc

@@ -1,16 +1,18 @@
 #!/bin/bash
 
 # Set up symbolic links
-./symlink.sh
+../symlink.sh
 
 # Create samba directories
-./makedirs.sh
+../makedirs.sh
 
 # See our bash changes
 source ~/.bashrc
 
-# Install from repositories
+# Install nala as replacement for apt
 ./programs/nala.sh
+
+# Install from repositories
 ./nalainstall.sh
 
 # Install from other sources

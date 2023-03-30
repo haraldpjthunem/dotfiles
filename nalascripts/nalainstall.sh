@@ -31,15 +31,17 @@ install libnotify-bin     # Used by several programs to send notifications
 # install tldr              # Short version of 'man' command
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
-install krename           # Batch file renamer
+# install krename           # Batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
-install notepadqq         # Notepad++ like text editor
+# install notepadqq         # Notepad++ like text editor
 install cool-retro-term   # Retro-style terminal
-install ranger            # Konsole-based file manager
-install gufw              # Graphical interface to firewall
+# install ranger            # Konsole-based file manager
+install kdiff3            # File diff
+install krusader          # Commander-like file manager
 install mc                # Midnight Commander console-based file manager
-install dia               # Diagram utility (Visio-like)
+install gufw              # Graphical interface to firewall
+# install dia               # Diagram utility (Visio-like)
 # install timeshift         # System backup/restore utility
 # install vim               # Text editor
 # install tmux              # Terminal multiplexer
@@ -56,7 +58,7 @@ install samba
 install audacity          # Cross-platform audio editor/converter
 install handbrake         # DVD ripper and video transcoder
 install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
-install vlc               # Multimedia player and streamer
+# install vlc               # Multimedia player and streamer
 
 # Image processing
 install pinta             # Simple image editor

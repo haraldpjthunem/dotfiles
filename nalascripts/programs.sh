@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd programs/
-# ./grub-customizer.sh
+./grub-customizer.sh
 ./python.sh
 ./codium.sh
 ./etcher.sh
