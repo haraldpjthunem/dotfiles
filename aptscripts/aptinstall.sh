@@ -54,6 +54,9 @@ install smbclient
 install winbind
 install samba
 
+# To share directories from the NAS
+install nfs-common
+
 # Multimedia
 install audacity          # Cross-platform audio editor/converter
 install handbrake         # DVD ripper and video transcoder
