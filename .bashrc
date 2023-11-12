@@ -93,9 +93,9 @@ alias wget='wget -c'
 # alias man='tldr' # Get original 'man' by using '\man'
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
-alias sublime='/opt/sublime_text/sublime_text'
-alias np='notepadqq'
-alias r=ranger
+#alias sublime='/opt/sublime_text/sublime_text'
+#alias np='notepadqq'
+#alias r=ranger
 #alias fp='/home/harald/Development/fpc-3.2.0/bin/fp'
 
 # Pretty-print of some PATH variables:
@@ -108,11 +108,6 @@ alias poweroff='sudo /sbin/poweroff'
 alias halt='sudo /sbin/halt'
 alias shutdown='sudo /sbin/shutdown'
 
-# git related
-alias gadd='git add'
-alias gcom='git commit'
-alias gsup='git status'
-
 # python
 alias python='python3'
 alias pip='pip3'
@@ -121,7 +116,7 @@ alias startenv='source env/bin/activate && which python3'
 alias stopenv='deactivate'
 
 # Use docker without a root-equivalent docker group
-alias docker='sudo docker'
+#alias docker='sudo docker'
 
 # Android emulators
 # It may need to be changed according to Android Studio version
@@ -503,21 +498,3 @@ unset bash_prompt
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/harald/.sdkman"
 [[ -s "/home/harald/.sdkman/bin/sdkman-init.sh" ]] && source "/home/harald/.sdkman/bin/sdkman-init.sh"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-
-#__conda_setup="$('/home/harald/Development/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/home/harald/Development/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/home/harald/Development/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/home/harald/Development/anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-
-# <<< conda initialize <<<
-

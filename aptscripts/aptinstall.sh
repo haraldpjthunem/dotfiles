@@ -31,14 +31,15 @@ install libnotify-bin     # Used by several programs to send notifications
 # install tldr              # Short version of 'man' command
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
-install krename           # Batch file renamer
+# install krename           # Batch file renamer
+install thunar            # File manager and batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
-install notepadqq         # Notepad++ like text editor
+# install notepadqq         # Notepad++ like text editor
 install cool-retro-term   # Retro-style terminal
-install ranger            # Konsole-based file manager
+# install ranger            # Konsole-based file manager
 install kdiff3            # File diff
-install krusader          # Commander-like file manager
+# install krusader          # Commander-like file manager
 install mc                # Midnight Commander console-based file manager
 install gufw              # Graphical interface to firewall
 install dia               # Diagram utility (Visio-like)
@@ -47,6 +48,8 @@ install dia               # Diagram utility (Visio-like)
 # install tmux              # Terminal multiplexer
 # install nmap              # Network mapper for network exploration or security auditing
 # install openvpn           # Virtual private network daemon
+
+install docker.io         # docker
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils

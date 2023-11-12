@@ -2,8 +2,8 @@
 
 cd programs/
 ./grub-customizer.sh
-./python.sh
+# ./python.sh
 ./codium.sh
 ./etcher.sh
-./docker.sh
+# ./docker.sh
 # ./sublime-text.sh
