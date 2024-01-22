@@ -40,6 +40,7 @@ install cool-retro-term   # Retro-style terminal
 install kdiff3            # File diff
 install krusader          # Commander-like file manager
 install mc                # Midnight Commander console-based file manager
+install fzf               # Fuzzy file finder
 install gufw              # Graphical interface to firewall
 # install dia               # Diagram utility (Visio-like)
 # install timeshift         # System backup/restore utility
