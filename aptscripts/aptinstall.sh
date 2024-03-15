@@ -16,6 +16,7 @@ function install {
 }
 
 # Basics
+install muon              # Graphical package manager
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
 install net-tools         # Net tools, such as ifconfig
@@ -32,7 +33,7 @@ install libnotify-bin     # Used by several programs to send notifications
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
 # install krename           # Batch file renamer
-install thunar            # File manager and batch file renamer
+# install thunar            # File manager and batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
 # install notepadqq         # Notepad++ like text editor
@@ -43,7 +44,7 @@ install kdiff3            # File diff
 install mc                # Midnight Commander console-based file manager
 install fzf               # Fuzzy file finder
 install gufw              # Graphical interface to firewall
-install dia               # Diagram utility (Visio-like)
+# install dia               # Diagram utility (Visio-like)
 # install timeshift         # System backup/restore utility
 # install vim               # Text editor
 # install tmux              # Terminal multiplexer
@@ -76,7 +77,6 @@ install gwenview          # Image viewer
 # install jpegoptim         # JPG optimizer (recompresses image files)
 
 # Development
-# install codium            # Visual Studio Code clone (check out https://vscodium.com/)
 # install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
 install libsqlite3-dev    # Library needed to use sqlite3 in Flutter development

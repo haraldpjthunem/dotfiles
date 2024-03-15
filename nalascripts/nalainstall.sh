@@ -16,6 +16,7 @@ function install {
 }
 
 # Basics
+install muon              # Graphical package manager
 install curl              # Command line app to download files
 install chromium-browser  # Web browser
 install net-tools         # Net tools, such as ifconfig
@@ -32,6 +33,7 @@ install libnotify-bin     # Used by several programs to send notifications
 install neofetch          # Info on linux version
 install htop              # Interactive process viewer
 # install krename           # Batch file renamer
+# install thunar            # File manager and batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
 # install notepadqq         # Notepad++ like text editor
@@ -49,6 +51,8 @@ install gufw              # Graphical interface to firewall
 # install nmap              # Network mapper for network exploration or security auditing
 # install openvpn           # Virtual private network daemon
 
+install docker.io         # docker
+
 # Samba related, required for mounting external devices/drives
 install cifs-utils
 install smbclient
@@ -62,7 +66,7 @@ install nfs-common
 install audacity          # Cross-platform audio editor/converter
 install handbrake         # DVD ripper and video transcoder
 install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
-# install vlc               # Multimedia player and streamer
+install vlc               # Multimedia player and streamer
 
 # Image processing
 install pinta             # Simple image editor
@@ -73,7 +77,6 @@ install gwenview          # Image viewer
 # install jpegoptim         # JPG optimizer (recompresses image files)
 
 # Development
-# install codium            # Visual Studio Code clone (check out https://vscodium.com/)
 # install bcompare          # Beyond Compare for file/folder comparisons and synchronisation
 install meld              # Graphical diff viewer and merge application
 install libsqlite3-dev    # Library needed to use sqlite3 in Flutter development
