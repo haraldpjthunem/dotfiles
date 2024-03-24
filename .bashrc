@@ -111,9 +111,9 @@ alias shutdown='sudo /sbin/shutdown'
 # python
 alias python='python3'
 alias pip='pip3'
-alias mkenv='python3 -m venv env'
-alias startenv='source env/bin/activate && which python3'
-alias stopenv='deactivate'
+alias makeenv='python3 -m venv env'
+alias actenv='source env/bin/activate && which python3'
+alias deactenv='deactivate'
 
 # Use docker without a root-equivalent docker group
 #alias docker='sudo docker'

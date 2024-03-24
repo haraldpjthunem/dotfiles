@@ -36,7 +36,7 @@ install htop              # Interactive process viewer
 # install thunar            # File manager and batch file renamer
 install stacer            # System optimizer and monitoring
 install cmatrix           # Display from "The Matrix"
-# install notepadqq         # Notepad++ like text editor
+install notepadqq         # Notepad++ like text editor
 install cool-retro-term   # Retro-style terminal
 # install ranger            # Konsole-based file manager
 install kdiff3            # File diff
@@ -52,6 +52,7 @@ install gufw              # Graphical interface to firewall
 # install openvpn           # Virtual private network daemon
 
 install docker.io         # docker
+install sqlite3           # sqlite command line tool
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils
