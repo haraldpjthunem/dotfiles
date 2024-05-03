@@ -6,6 +6,5 @@ sudo mkdir /mnt/TERA4
 sudo mkdir /mnt/WEBSERVER
 
 sudo mkdir /media/DATA
-sudo mkdir /media/ISOs
 sudo mkdir /media/MYBOOK
-sudo mkdir /media/VM
+sudo mkdir /media/MIX

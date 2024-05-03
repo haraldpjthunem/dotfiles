@@ -121,7 +121,7 @@ alias deactenv='deactivate'
 # Android emulators
 # It may need to be changed according to Android Studio version
 alias nexus5='emulator @Nexus_5X_API_29 &'
-alias pixel='emulator @Pixel_5_API_30 &'
+alias pixel='emulator @Pixel_8_API_30 &'
 
 # Show contents of dir after action
 # function cd () {
