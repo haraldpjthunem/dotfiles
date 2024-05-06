@@ -30,7 +30,8 @@ install qdirstat          # Graphical application to show where your disk space 
 install dosbox            # x86 emulator to run old DOS programs
 install libnotify-bin     # Used by several programs to send notifications
 # install tldr              # Short version of 'man' command
-# install neofetch          # Info on linux version
+# install neofetch          # Info on linux version (deprecated)
+install screenfetch       # Info on linux version
 install htop              # Interactive process viewer
 # install krename           # Batch file renamer
 install thunar            # File manager and batch file renamer
