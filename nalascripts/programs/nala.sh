@@ -6,4 +6,4 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 
 echo "deb-src http://deb.volian.org/volian/ scar main" | sudo tee -a /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 
-sudo apt update && sudo apt install nala
+sudo apt update && sudo apt install -y nala

@@ -11,7 +11,7 @@ curl -1sLf 'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' | sudo -
 
 # Update and install
 sudo apt-get update
-sudo apt-get install balena-etcher-electron
+sudo apt-get install -y balena-etcher-electron
 
 # Uninstall:
 #sudo apt-get remove balena-etcher-electron

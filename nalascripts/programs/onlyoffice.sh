@@ -9,4 +9,4 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5
 echo 'deb https://download.onlyoffice.com/repo/debian squeeze main' | sudo tee -a /etc/apt/sources.list.d/onlyoffice.list
 
 # Update then install vscodium
-sudo nala update && sudo nala install onlyoffice-desktopeditors
+sudo nala update && sudo nala install -y onlyoffice-desktopeditors

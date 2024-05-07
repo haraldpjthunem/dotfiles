@@ -10,5 +10,5 @@ echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium mai
 
 # Update then install vscodium
 sudo nala update
-sudo nala install codium
+sudo nala install -y codium
 
