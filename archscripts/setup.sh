@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Set up symbolic links
-../symlink.sh
+# Set up symbolic links to this directory
+./symlink.sh
 
 # Create samba directories
 ../makedirs.sh
@@ -14,9 +14,6 @@ source ~/.bashrc
 
 # Install from other sources
 # ./programs.sh
-
-# Get all upgrades
-# sudo nala upgrade -y
 
 # Fun hello
 figlet "... and we're back!" | lolcat
