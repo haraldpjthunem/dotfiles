@@ -9,7 +9,7 @@ function install {
 
   if [ $? -ne 0 ]; then
     echo "Installing: ${1}..."
-    sudo pacman -S $1
+    sudo pacman -S --noconfirm $1
   else
     echo "Already installed: ${1}"
   fi
