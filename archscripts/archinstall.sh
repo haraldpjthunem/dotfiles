@@ -18,6 +18,7 @@ function install {
 # Basics
 # install chromium          # Web browser
 install net-tools         # Net tools, such as ifconfig
+install xsel              # Manipulate the X selection (for terminal copy/paste)
 install screenfetch       # Info on linux version
 install thunar            # File manager and batch file renamer
 install cmatrix           # Display from "The Matrix"

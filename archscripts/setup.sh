@@ -12,6 +12,9 @@ source ~/.bashrc
 # Install from repositories
 ./archinstall.sh
 
+# Install and enable snap packages
+./enablesnap.sh
+
 # Install from other sources
 # ./programs.sh
 

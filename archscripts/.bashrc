@@ -74,6 +74,10 @@ alias deactenv='deactivate'
 alias nexus5='emulator @Nexus_5X_API_29 &'
 alias pixel='emulator @Pixel_8_API_30 &'
 
+# terminal copy to / paste from clipboard
+alias pbcopy='xsel --input --clipboard'
+alias pbpaste='xsel --output --clipboard'
+
 # Change up a variable number of directories
 # E.g:
 #   cu   -> cd ../
