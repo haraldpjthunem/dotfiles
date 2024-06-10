@@ -8,3 +8,4 @@ cd programs/
 # ./etcher.sh
 ./docker.sh
 # ./sublime-text.sh
+./audiorecorder.sh
