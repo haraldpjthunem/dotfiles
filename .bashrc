@@ -9,6 +9,7 @@ esac
 HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
+HISTTIMEFORMAT="%Y-%m-%d %T "
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -85,7 +86,7 @@ alias df='df -kTh'
 alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -pv'
-alias code='codium'
+# alias code='codium'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -111,9 +112,10 @@ alias shutdown='sudo /sbin/shutdown'
 # python
 alias python='python3'
 alias pip='pip3'
-alias makeenv='python3 -m venv env'
-alias actenv='source env/bin/activate && which python3'
-alias deactenv='deactivate'
+alias mkenv='python3 -m venv env'
+alias startenv='source env/bin/activate && which python3'
+alias stopenv='deactivate'
+alias jn='jupyter notebook'
 
 # Use docker without a root-equivalent docker group
 #alias docker='sudo docker'
@@ -179,6 +181,7 @@ fi
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export PATH="$JAVA_HOME/bin:$PATH:$HOME/Development/maven/bin:$HOME/.local/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$ANDROID_HOME/emulator"
+export OPENAI_API_KEY=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
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
@@ -489,12 +492,12 @@ bash_prompt() {
 ##	The contents of this variable are executed as a regular Bash command 
 ##	just before Bash displays a prompt. 
 ##	We want it to call our own command to truncate PWD and store it in NEW_PWD
-# PROMPT_COMMAND=bash_prompt_command
+PROMPT_COMMAND=bash_prompt_command
 
 ##	Call bash_promnt only once, then unset it (not needed any more)
 ##	It will set $PS1 with colors and relative to $NEW_PWD, 
 ##	which gets updated by $PROMT_COMMAND on behalf of the terminal
-# bash_prompt
+bash_prompt
 # unset bash_prompt
 
 ### EOF ###
@@ -502,3 +505,19 @@ bash_prompt() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/harald/.sdkman"
 [[ -s "/home/harald/.sdkman/bin/sdkman-init.sh" ]] && source "/home/harald/.sdkman/bin/sdkman-init.sh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/harald/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/harald/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/harald/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/harald/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
