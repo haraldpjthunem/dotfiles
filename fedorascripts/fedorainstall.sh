@@ -9,7 +9,7 @@ function install {
 
   if [ $? -ne 0 ]; then
     echo "Installing: ${1}..."
-    sudo dnf -y $1
+    sudo dnf install -y $1
   else
     echo "Already installed: ${1}"
   fi
@@ -24,6 +24,7 @@ install thunar            # File manager and batch file renamer
 install cmatrix           # Display from "The Matrix"
 install mc                # Midnight Commander console-based file manager
 install fzf               # Fuzzy file finder
+install snapd             # Allow installation of snap packages
 
 # Samba related, required for mounting external devices/drives
 #install cifs-utils
@@ -42,4 +43,3 @@ install gimp              # Advanced image editor
 # Fun stuff
 install figlet            # Creates large characters out of ordinary screen characters
 install lolcat            # Colors text in a rainbow animation
-

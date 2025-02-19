@@ -26,6 +26,9 @@ function linkDotfile {
   ln -s ${dotfilesDir}/${1} ${dest}
 }
 
-# linkDotfile .zshrc
 linkDotfile .bashrc
 linkDotfile .bash_profile
+# linkDotfile .vimrc
+# linkDotfile .tmux.conf
+# linkDotfile .gitconfig
+# linkDotfile .gitmessage
