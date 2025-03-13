@@ -28,6 +28,7 @@ function linkDotfile {
 
 linkDotfile .bashrc
 linkDotfile .bash_profile
+linkDotfile .bash_aliases
 # linkDotfile .vimrc
 # linkDotfile .tmux.conf
 # linkDotfile .gitconfig

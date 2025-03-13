@@ -27,5 +27,4 @@ function linkDotfile {
 }
 
 linkDotfile .zshrc
-# linkDotfile .bashrc
-# linkDotfile .bash_profile
+linkDotfile .zsh_aliases
