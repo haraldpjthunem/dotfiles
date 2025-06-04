@@ -120,9 +120,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export DEV_HOME="/media/DATA/Development"
 export ANDROID_HOME="$HOME/Development/android-sdk"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-export PATH="$JAVA_HOME/bin:$PATH:$HOME/Development/maven/bin:$HOME/.local/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$ANDROID_HOME/emulator"
+export PATH="$JAVA_HOME/bin:$DEV_HOME/fpc/bin:$DEV_HOME/maven/bin:$HOME/.local/bin:$HOME/Development/flutter/bin:$HOME/.pub-cache/bin:$PATH:$ANDROID_HOME/emulator:/media/DATA/Applications"
 export OPENAI_API_KEY=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
 
 ################################################################################
@@ -451,14 +452,14 @@ export SDKMAN_DIR="/home/harald/.sdkman"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/harald/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/media/DATA/Development/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/harald/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/home/harald/miniforge3/etc/profile.d/conda.sh"
+    if [ -f "/media/DATA/Development/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/media/DATA/Development/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/harald/miniforge3/bin:$PATH"
+        export PATH="/media/DATA/Development/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
