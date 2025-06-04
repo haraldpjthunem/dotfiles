@@ -12,11 +12,8 @@ source ~/.bashrc
 # Install from repositories
 ./fedorainstall.sh
 
-# Install and enable snap packages
-# ./enablesnap.sh
-
 # Install from other sources
-# ./programs.sh
+./programs.sh
 
 # Fun hello
 figlet "... and we're back!" | lolcat
