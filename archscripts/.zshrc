@@ -54,7 +54,6 @@ function fe() { find . -type f -iname '*'"${1:-}"'*' \
 
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export DEV_HOME="/media/DATA/Development"
-export DEV_HOME="/media/DATA/Development"
 export PATH="$DEV_HOME/fpc/bin:$DEV_HOME/miniforge3/bin:$JAVA_HOME/bin:$PATH:$HOME/.local/bin:$HOME/.pub-cache/bin"
 
 
