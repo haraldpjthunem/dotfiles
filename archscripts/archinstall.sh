@@ -25,6 +25,7 @@ install cmatrix           # Display from "The Matrix"
 install mc                # Midnight Commander console-based file manager
 install fzf               # Fuzzy file finder
 install gufw              # Graphical interface to firewall
+install darktable         # Image manager to import from Canon EOS 100D
 
 # Samba related, required for mounting external devices/drives
 install cifs-utils
