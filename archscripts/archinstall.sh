@@ -41,7 +41,20 @@ install audacity          # Cross-platform audio editor/converter
 install pinta             # Simple image editor
 install gimp              # Advanced image editor
 
+# VLC video/audio codecs
+install vlc-plugin-ffmpeg
+install vlc-plugin-mpeg2
+install vlc-plugin-x264
+install vlc-plugin-x265
+install vlc-plugin-ass
+install vlc-plugin-matroska
+install vlc-plugin-dvd
+install vlc-plugin-bluray
+install vlc-plugin-srt
+install vlc-plugin-soxr
+install libdvdcss
+install libbluray
+
 # Fun stuff
 install figlet            # Creates large characters out of ordinary screen characters
 install lolcat            # Colors text in a rainbow animation
-
