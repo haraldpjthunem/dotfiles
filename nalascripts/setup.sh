@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up symbolic links
-../symlink.sh
+./symlink.sh
 
 # Create samba directories
 ../makedirs.sh
