@@ -18,12 +18,12 @@ function install {
 # Basics
 # install chromium          # Web browser
 install net-tools         # Net tools, such as ifconfig
-install xsel              # Manipulate the X selection (for terminal copy/paste)
+# install xsel              # Manipulate the X selection (for terminal copy/paste)
 install screenfetch       # Info on linux version
 install thunar            # File manager and batch file renamer
 install cmatrix           # Display from "The Matrix"
 install mc                # Midnight Commander console-based file manager
-install fzf               # Fuzzy file finder
+# install fzf               # Fuzzy file finder
 install gufw              # Graphical interface to firewall
 install darktable         # Image manager to import from Canon EOS 100D
 
@@ -34,12 +34,12 @@ install winbind
 install samba
 
 # Multimedia
-install audacity          # Cross-platform audio editor/converter
+# install audacity          # Cross-platform audio editor/converter
 # install handbrake         # DVD ripper and video transcoder
-# install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
+install mkvtoolnix-gui    # GUI frontend for working with Matroska (MKV) files
 
 # Image processing
-install pinta             # Simple image editor
+install krita             # Image editor
 install gimp              # Advanced image editor
 
 # VLC video/audio codecs
